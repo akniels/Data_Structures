@@ -1,0 +1,98 @@
+ All Analyses of big 0 notation do not include print functions in the notation
+ 
+ 
+ Task 0 
+
+"""
+ Big  Notation Worst Case Secenario
+ 
+
+ 
+ 
+ O(2)
+ there are 2 steps of reading the variables and this is constant
+
+This is most effeicent when you read the first and last row with one line 
+and directly refer to the first and last line 
+"""
+
+Task 1 
+"""
+Big O Notation Worst Case Scenario
+
+O(2 + 4n + 4x)
+
+2 is for the variables created (text_counter, list_check)  
+
+4n and 4x is for the for loops based on the length of calls and chats
+
+
+I could make this more efficient by reading each 
+row once instead of twice and then checking if it is in the list.
+
+
+"""
+
+
+Task 2 
+
+
+"""
+Big O Notation Worst Case Scenario
+
+O(3 + 2n + 2x)
+
+3 is for the constant variables created (list check, telephone_number, and total_time)
+
+2n is for the for loop based on the call data
+
+2x on the for loop created in the list check
+
+I couldnt think of a way to make this more efficient. 
+"""
+
+Task 3 
+"""
+Big O Notation Worst Case Scenario
+
+PArt A Big 0 Notation
+
+(1 + 2x + xlog(x))
+
+1 is for the constant variable created 
+
+2x is for the for loop iterating over calls 
+
+xLog(x) is for the sort function 
+
+Part B Big O Notation
+
+(2 + 1n)
+
+2 represents the two variables created which are constant
+
+1n represents the for loop over the calls file
+
+I couldnt think of a way to make this more efficient
+
+"""
+
+
+Task 4 
+
+"""
+Big O Notation Worst Case Scenario
+
+O(5 + 1n + 1x + 1x+ x(log(x)))
+
+
+
+5 represents the 5 valiables created in the algorithm (3 lists, two sets)
+
+1n represents the first for loop iterating over texts
+
+the  two 1x variables represent the two for loops iteration over calls
+
+xlog(x) is for the sotring function in the print statement
+
+"""
