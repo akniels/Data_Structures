@@ -50,16 +50,24 @@ print(f"These numbers could be telemarketers:",*sorted(spammers),sep='\n')
 """
 Big O Notation Worst Case Scenario
 
-O(5 + 1n + 1x + 1x+ x(log(x)))
+O(5 + 1n^3 + 1x^2 + 1y^2+ x(log(x)))
 
 
 
 5 represents the 5 valiables created in the algorithm (3 lists, two sets)
 
-1n represents the first for loop iterating over texts
+1n^3 represents the first for loop iterating over texts. This item is cubed because
+one must check if the item is not in incoming text or outgoing text and the worse case is the item 
+as long as the CSV
 
-the  two 1x variables represent the two for loops iteration over calls
+the  1x^2 variables represent the loop iteration over calls. This item is squared because
+the worst case scenario is the incoming call is just as long as the call csv
 
-xlog(x) is for the sotring function in the print statement
+the  1y^2 variables represent the  second loop iteration over calls. This item is squared because
+the worst case scenario is the master list is just as long as the call csv
+
+
+
+xlog(x) is for the sorting function in the print statement
 
 """

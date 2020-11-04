@@ -20,37 +20,29 @@ Print a message:
 "There are <count> different telephone numbers in the records."
 """
 
-text_counter = 0
-list_check = []
-for i in range(len(texts) - 1):
-    if texts[i][0] not in list_check:
-       list_check.append(texts[i][0]) 
-       text_counter += 1
-    if texts[i][1] not in list_check:
-       list_check.append(texts[i][1]) 
-       text_counter += 1
-for p in range(len(calls) - 1):
-    if calls[p][0] not in list_check:
-       list_check.append(calls[p][0]) 
-       text_counter += 1
-    if calls[p][1] not in list_check:
-       list_check.append(calls[p][1]) 
-       text_counter += 1  
+tele_number = set()
+for item in calls:
+     tele_number.add(item[0])
+     tele_number.add(item[1])
+for item in texts:
+    tele_number.add(item[0])
+    tele_number.add(item[1])
+
 
 
 
 #print(len(calls))
 #print(len(texts))
-print(f"There are {text_counter} different telephone numbers in the records.")
+print(f"There are {len(tele_number)} different telephone numbers in the records.")
 
 """
 Big O Notation Worst Case Scenario
 
-O(2 + 4n + 4x)
+O(1 + 2n + 2x)
 
-2 is for the variables created (text_counter, list_check)  
+2 is for the set created tele_number 
 
-4n and 4x is for the for loops based on the length of calls and chats
+2n and 2x is for the for loops based on the length of calls and texts
 
 
 I could make this more efficient by reading each 

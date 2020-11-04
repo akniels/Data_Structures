@@ -20,11 +20,11 @@ Task 1
 """
 Big O Notation Worst Case Scenario
 
-O(2 + 4n + 4x)
+O(1 + 2n + 2x)
 
-2 is for the variables created (text_counter, list_check)  
+2 is for the set created tele_number 
 
-4n and 4x is for the for loops based on the length of calls and chats
+2n and 2x is for the for loops based on the length of calls and texts
 
 
 I could make this more efficient by reading each 
@@ -33,20 +33,19 @@ row once instead of twice and then checking if it is in the list.
 
 """
 
-
 Task 2 
 
 
 """
 Big O Notation Worst Case Scenario
 
-O(3 + 2n + 2x)
+O(2 + 2n + 1x)
 
-3 is for the constant variables created (list check, telephone_number, and total_time)
+2 is for the constant variables created (list check, total_time)
 
 2n is for the for loop based on the call data
 
-2x on the for loop created in the list check
+1x on the max function pulling from the list check (tele_number)
 
 I couldnt think of a way to make this more efficient. 
 """
@@ -57,11 +56,13 @@ Big O Notation Worst Case Scenario
 
 PArt A Big 0 Notation
 
-(1 + 2x + xlog(x))
+(1 + 2x^2 + xlog(x))
 
 1 is for the constant variable created 
 
-2x is for the for loop iterating over calls 
+2x^2 is for the for loop iterating over calls. We square this function because
+we also are checking the list_banaglore item which could be just as long as 
+the calls table
 
 xLog(x) is for the sort function 
 
@@ -77,22 +78,29 @@ I couldnt think of a way to make this more efficient
 
 """
 
-
 Task 4 
 
 """
 Big O Notation Worst Case Scenario
 
-O(5 + 1n + 1x + 1x+ x(log(x)))
+O(5 + 1n^3 + 1x^2 + 1y^2+ x(log(x)))
 
 
 
 5 represents the 5 valiables created in the algorithm (3 lists, two sets)
 
-1n represents the first for loop iterating over texts
+1n^3 represents the first for loop iterating over texts. This item is cubed because
+one must check if the item is not in incoming text or outgoing text and the worse case is the item 
+as long as the CSV
 
-the  two 1x variables represent the two for loops iteration over calls
+the  1x^2 variables represent the loop iteration over calls. This item is squared because
+the worst case scenario is the incoming call is just as long as the call csv
 
-xlog(x) is for the sotring function in the print statement
+the  1y^2 variables represent the  second loop iteration over calls. This item is squared because
+the worst case scenario is the master list is just as long as the call csv
+
+
+
+xlog(x) is for the sorting function in the print statement
 
 """

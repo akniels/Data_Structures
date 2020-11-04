@@ -86,11 +86,13 @@ Big O Notation Worst Case Scenario
 
 PArt A Big 0 Notation
 
-(1 + 2x + xlog(x))
+(1 + 2x^2 + xlog(x))
 
 1 is for the constant variable created 
 
-2x is for the for loop iterating over calls 
+2x^2 is for the for loop iterating over calls. We square this function because
+we also are checking the list_banaglore item which could be just as long as 
+the calls table
 
 xLog(x) is for the sort function 
 
